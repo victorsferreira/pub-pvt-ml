@@ -1,0 +1,14 @@
+service: public
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  profile: estudos
+  lambdaHashingVersion: 20201221
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http: GET hello
