@@ -7,3 +7,6 @@
 - Associar Subnet a VPC
 - ACL: firewall da Rede
 - Security Group: firewall da instância
+
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/github
